@@ -1,0 +1,21 @@
+# apikey
+api:
+  # Please register an ElfProxy account first and contact customer service to obtain the API key http://pyrn.2.vu/1/
+  key:
+
+server:
+  # The HTTP port of the server is set to 9000 by default
+  port: 9000
+  servlet:
+    # access path of the application
+    context-path: /
+  tomcat:
+    # Tomcat's URI Encoding
+    uri-encoding: UTF-8
+    # The queue count after reaching the maximum number of connections is set to 100 by default
+    accept-count: 1000
+    threads:
+      # tomcat maximum thread count default is 200
+      max: 800
+      # The default value for the number of threads initialized during Tomcat startup is 10
+      min-spare: 100
